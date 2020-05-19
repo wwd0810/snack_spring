@@ -2898,3 +2898,165 @@
 
 [2m2020-05-19 17:53:37.064[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=8
 
+[2m2020-05-19 17:56:59.380[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select user0_.id as id1_3_, user0_.created_date as created_2_3_, user0_.modified_date as modified3_3_, user0_.nickname as nickname4_3_, user0_.team_id as team_id5_3_, user0_.username as username6_3_ from tbl_user user0_
+
+[2m2020-05-19 17:56:59.383[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=1
+
+[2m2020-05-19 17:56:59.383[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=2
+
+[2m2020-05-19 17:56:59.384[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=3
+
+[2m2020-05-19 17:56:59.384[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=4
+
+[2m2020-05-19 17:56:59.384[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=5
+
+[2m2020-05-19 17:56:59.384[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=6
+
+[2m2020-05-19 17:56:59.385[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=7
+
+[2m2020-05-19 17:56:59.385[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=8
+
+[2m2020-05-19 17:57:14.809[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select user0_.id as id1_3_, user0_.created_date as created_2_3_, user0_.modified_date as modified3_3_, user0_.nickname as nickname4_3_, user0_.team_id as team_id5_3_, user0_.username as username6_3_ from tbl_user user0_
+
+[2m2020-05-19 17:57:14.811[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=1
+
+[2m2020-05-19 17:57:14.811[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=2
+
+[2m2020-05-19 17:57:14.811[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=3
+
+[2m2020-05-19 17:57:14.811[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=4
+
+[2m2020-05-19 17:57:14.812[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=5
+
+[2m2020-05-19 17:57:14.812[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=6
+
+[2m2020-05-19 17:57:14.812[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=7
+
+[2m2020-05-19 17:57:14.813[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=8
+
+[2m2020-05-19 17:57:24.106[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select user0_.id as id1_3_, user0_.created_date as created_2_3_, user0_.modified_date as modified3_3_, user0_.nickname as nickname4_3_, user0_.team_id as team_id5_3_, user0_.username as username6_3_ from tbl_user user0_
+
+[2m2020-05-19 17:57:24.107[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=1
+
+[2m2020-05-19 17:57:24.108[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=2
+
+[2m2020-05-19 17:57:24.108[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=3
+
+[2m2020-05-19 17:57:24.108[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=4
+
+[2m2020-05-19 17:57:24.109[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=5
+
+[2m2020-05-19 17:57:24.109[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=6
+
+[2m2020-05-19 17:57:24.110[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=7
+
+[2m2020-05-19 17:57:24.110[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=8
+
+[2m2020-05-19 17:57:31.512[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select user0_.id as id1_3_, user0_.created_date as created_2_3_, user0_.modified_date as modified3_3_, user0_.nickname as nickname4_3_, user0_.team_id as team_id5_3_, user0_.username as username6_3_ from tbl_user user0_
+
+[2m2020-05-19 17:57:31.514[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=1
+
+[2m2020-05-19 17:57:31.515[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=2
+
+[2m2020-05-19 17:57:31.515[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=3
+
+[2m2020-05-19 17:57:31.516[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=4
+
+[2m2020-05-19 17:57:31.516[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=5
+
+[2m2020-05-19 17:57:31.516[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=6
+
+[2m2020-05-19 17:57:31.516[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=7
+
+[2m2020-05-19 17:57:31.517[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=8
+
+[2m2020-05-19 17:57:33.846[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select user0_.id as id1_3_, user0_.created_date as created_2_3_, user0_.modified_date as modified3_3_, user0_.nickname as nickname4_3_, user0_.team_id as team_id5_3_, user0_.username as username6_3_ from tbl_user user0_
+
+[2m2020-05-19 17:57:33.847[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=1
+
+[2m2020-05-19 17:57:33.847[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=2
+
+[2m2020-05-19 17:57:33.848[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=3
+
+[2m2020-05-19 17:57:33.848[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=4
+
+[2m2020-05-19 17:57:33.848[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=5
+
+[2m2020-05-19 17:57:33.849[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=6
+
+[2m2020-05-19 17:57:33.849[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=7
+
+[2m2020-05-19 17:57:33.849[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=8
+
+[2m2020-05-19 17:57:35.696[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select user0_.id as id1_3_, user0_.created_date as created_2_3_, user0_.modified_date as modified3_3_, user0_.nickname as nickname4_3_, user0_.team_id as team_id5_3_, user0_.username as username6_3_ from tbl_user user0_
+
+[2m2020-05-19 17:57:35.698[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=1
+
+[2m2020-05-19 17:57:35.699[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=2
+
+[2m2020-05-19 17:57:35.699[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=3
+
+[2m2020-05-19 17:57:35.700[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=4
+
+[2m2020-05-19 17:57:35.700[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=5
+
+[2m2020-05-19 17:57:35.700[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=6
+
+[2m2020-05-19 17:57:35.701[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=7
+
+[2m2020-05-19 17:57:35.701[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=8
+
+[2m2020-05-19 17:57:41.414[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select user0_.id as id1_3_, user0_.created_date as created_2_3_, user0_.modified_date as modified3_3_, user0_.nickname as nickname4_3_, user0_.team_id as team_id5_3_, user0_.username as username6_3_ from tbl_user user0_
+
+[2m2020-05-19 17:57:41.415[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=1
+
+[2m2020-05-19 17:57:41.415[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=2
+
+[2m2020-05-19 17:57:41.416[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=3
+
+[2m2020-05-19 17:57:41.416[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=4
+
+[2m2020-05-19 17:57:41.416[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=5
+
+[2m2020-05-19 17:57:41.416[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=6
+
+[2m2020-05-19 17:57:41.417[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=7
+
+[2m2020-05-19 17:57:41.417[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=8
+
+[2m2020-05-19 17:57:46.371[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select user0_.id as id1_3_, user0_.created_date as created_2_3_, user0_.modified_date as modified3_3_, user0_.nickname as nickname4_3_, user0_.team_id as team_id5_3_, user0_.username as username6_3_ from tbl_user user0_
+
+[2m2020-05-19 17:57:46.373[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=1
+
+[2m2020-05-19 17:57:46.374[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=2
+
+[2m2020-05-19 17:57:46.374[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=3
+
+[2m2020-05-19 17:57:46.374[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=4
+
+[2m2020-05-19 17:57:46.375[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=5
+
+[2m2020-05-19 17:57:46.375[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=6
+
+[2m2020-05-19 17:57:46.375[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=7
+
+[2m2020-05-19 17:57:46.376[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=8
+
+[2m2020-05-19 17:57:51.770[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select user0_.id as id1_3_, user0_.created_date as created_2_3_, user0_.modified_date as modified3_3_, user0_.nickname as nickname4_3_, user0_.team_id as team_id5_3_, user0_.username as username6_3_ from tbl_user user0_
+
+[2m2020-05-19 17:57:51.772[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=1
+
+[2m2020-05-19 17:57:51.772[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=2
+
+[2m2020-05-19 17:57:51.773[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=3
+
+[2m2020-05-19 17:57:51.773[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=4
+
+[2m2020-05-19 17:57:51.773[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=5
+
+[2m2020-05-19 17:57:51.774[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=6
+
+[2m2020-05-19 17:57:51.774[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=7
+
+[2m2020-05-19 17:57:51.775[0;39m [32m INFO[0;39m [35m14156[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mjdbc.sqlonly                            [0;39m [2m:[0;39m select team0_.id as id1_2_0_, team0_.created_date as created_2_2_0_, team0_.modified_date as modified3_2_0_, team0_.color as color4_2_0_, team0_.name as name5_2_0_ from tbl_team team0_ where team0_.id=8
+

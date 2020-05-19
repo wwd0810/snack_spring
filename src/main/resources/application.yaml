@@ -1,0 +1,37 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /snack_api
+
+spring:
+  datasource:
+#    url: jdbc:log4jdbc:mariadb://192.168.100.228:3306/laon_snack?useSSL=false&useUnicode=true&chartacterEncoding=utf8&serverTimezone=Asia/Seoul
+    url: jdbc:log4jdbc:mariadb://192.168.100.228:3306/laon_snack?useSSL=false&useUnicode=true&chartacterEncoding=utf8&serverTimezone=Asia/Seoul
+    username: laon_snack
+    password: laonpp00
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    hikari:
+      pool-name: Hikari-CP
+      maximum-pool-size: 10
+      minimum-idle: 2
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+#      FAIL_ON_EMPTY_BEANS: false
+  servlet:
+    multipart:
+      enabled: true
+      maxFileSize: 100MB
+      maxRequestSize: 100MB
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+
+upload:
+  path: /Users/joo/Desktop/project/snack_spring/upload
