@@ -3,6 +3,8 @@ package com.laon.snack_spring.service.user
 
 interface UserService {
 
+    fun readUser(id : Long): Map<String, Any>
+
     fun readUserList() : Map<String, Any>
 
     fun readUserPageList(page: Int, size: Int): Map<String, Any>

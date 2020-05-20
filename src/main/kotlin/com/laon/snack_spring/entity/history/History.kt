@@ -14,7 +14,10 @@ data class History(
         var id: Long?,
 
         @get:Column
-        var quantity: Long
+        var quantity: Long,
+
+        @get:Column
+        var payment: Boolean
 
 ) : BaseEntity() {
     @get:Column

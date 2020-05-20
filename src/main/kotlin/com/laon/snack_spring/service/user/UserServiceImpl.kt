@@ -4,24 +4,32 @@ import com.laon.snack_spring.common.define.ApiErrorCode
 import com.laon.snack_spring.common.exception.ApiException
 import com.laon.snack_spring.common.lib.logger
 import com.laon.snack_spring.entity.common.Paging
+import com.laon.snack_spring.entity.market.Snack
 import com.laon.snack_spring.entity.user.User
+import com.laon.snack_spring.repository.history.HistoryJpaRepository
+import com.laon.snack_spring.repository.snack.SnackJpaRepository
 import com.laon.snack_spring.repository.team.TeamJpaRepositoty
 import com.laon.snack_spring.repository.user.UserJpaRepository
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.PageRequest
 import org.springframework.stereotype.Service
 import java.lang.Exception
+import java.util.*
+import kotlin.collections.HashMap
 
 @Service("UserService")
 class UserServiceImpl(
         private val userJpaRepository: UserJpaRepository,
-        private val teamJpaRepositoty: TeamJpaRepositoty
+        private val teamJpaRepositoty: TeamJpaRepositoty,
+        private val historyJpaRepository: HistoryJpaRepository,
+        private val snackJpaRepository: SnackJpaRepository
 
 ): UserService {
 
     companion object {
         private val log = logger()
     }
+
 
     @Throws(Exception::class)
     override fun readUserPageList(page: Int, size: Int): Map<String, Any> {
@@ -38,6 +46,35 @@ class UserServiceImpl(
         run {
             returnMap["content"] = data.content
             returnMap["paging"] = paging
+        }
+
+        return returnMap
+    }
+
+    @Throws(Exception::class)
+    override fun readUser(id: Long): Map<String, Any> {
+        val returnMap: MutableMap<String, Any> = HashMap()
+
+        val user = userJpaRepository.findById(id).orElseThrow { throw ApiException(ApiErrorCode.USER_NOT_FOUND) }
+
+        val histories = historyJpaRepository.findAllByUser_idAndPayment(id, false)
+
+        var payment: Long = 0
+
+        histories.forEach {
+            val snackId: Long? = it.snack_id
+
+            if (snackId != null) {
+                val snack = snackJpaRepository.findById(snackId).orElseThrow { throw ApiException(ApiErrorCode.SNACK_NOT_FOUND) }
+
+                payment += snack.price
+            }
+
+        }
+
+        run {
+            returnMap["user"] = user
+            returnMap["returnPayment"] = payment
         }
 
         return returnMap

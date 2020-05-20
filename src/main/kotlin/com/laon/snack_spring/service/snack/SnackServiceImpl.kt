@@ -108,7 +108,7 @@ class SnackServiceImpl(
 
             if (snacks.size == quantities.size) {
                 snacks.forEachIndexed { index, snack ->
-                    val history = History(quantity = quantities[index], id = null)
+                    val history = History(quantity = quantities[index], id = null, payment = false)
 
                     if (snack.remain - quantities[index] >= 0) {
                         snack.remain -= quantities[index]
