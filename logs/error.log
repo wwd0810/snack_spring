@@ -605,3 +605,7 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
 	... 33 common frames omitted
 
+[2m2020-05-20 19:00:59.218[0;39m [33m WARN[0;39m [35m90081[0;39m [2m---[0;39m [2m[           main][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2m2020-05-20 19:00:59.412[0;39m [33m WARN[0;39m [35m90081[0;39m [2m---[0;39m [2m[           main][0;39m [36mion$DefaultTemplateResolverConfiguration[0;39m [2m:[0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2m2020-05-20 21:43:40.117[0;39m [33m WARN[0;39m [35m4376[0;39m [2m---[0;39m [2m[           main][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2m2020-05-20 21:43:40.300[0;39m [33m WARN[0;39m [35m4376[0;39m [2m---[0;39m [2m[           main][0;39m [36mion$DefaultTemplateResolverConfiguration[0;39m [2m:[0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
