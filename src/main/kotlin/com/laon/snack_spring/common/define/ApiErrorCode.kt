@@ -10,10 +10,17 @@ enum class ApiErrorCode(
 
     // User
     USER_NOT_FOUND("api.error.user_not_found", "회원을 찾을 수 없습니다."),
+    USER_PASS_INVALID("api.error.user_pass_invalid", "비밀번호가 맞지 않습니다."),
 
 //    Team
 
     TEAM_NOT_FOUND("api.error.team_not_found", "팀을 찾을 수가 없습니다."),
+
+//    notice
+    NOTICE_NOT_FOUND("api.error.notice_not_found", "공지사항을 찾을 수가 없습니다."),
+
+    //    notice
+    REQUEST_NOT_FOUND("api.error.request_not_found", "을 찾을 수가 없습니다."),
 
 
     //COMMON

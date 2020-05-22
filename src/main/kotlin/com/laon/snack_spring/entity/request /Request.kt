@@ -1,35 +1,33 @@
-package com.laon.snack_spring.entity.user
+package com.laon.snack_spring.entity.request
 
 import com.fasterxml.jackson.annotation.JsonIgnore
 import com.laon.snack_spring.entity.common.BaseEntity
-import com.laon.snack_spring.entity.team.Team
+import com.laon.snack_spring.entity.user.User
 import javax.persistence.*
 
-@Table(name = "tbl_user")
+@Table(name = "tbl_request")
 @Entity
-data class User(
+data class Request (
+
         @get:Id
         @get:GeneratedValue(strategy = GenerationType.IDENTITY)
         var id: Long?,
 
         @get:Column
-        var username: String,
+        var model: String,
 
         @get:Column
-        var nickname: String,
+        var brand: String,
 
         @get:Column
-        @JsonIgnore
-        var password: String
-
+        var quantity: Long
 
 ) : BaseEntity() {
-
         @get:Column
         @JsonIgnore
-        var team_id: Long? = null
+        var user_id: Long? = null
 
         @get:OneToOne
-        @get:JoinColumn(name = "team_id", insertable = false, updatable = false)
-        var team: Team? = null
+        @get:JoinColumn(name = "user_id", insertable = false, updatable = false)
+        var user: User? = null
 }

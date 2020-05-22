@@ -29,6 +29,7 @@ data class History(
     var snack_id: Long? = null
 
     @get:OneToOne
+    @JsonIgnore
     @get:JoinColumn(name = "user_id", insertable = false, updatable = false)
     var user: User? = null
 

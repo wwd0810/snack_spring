@@ -47,6 +47,34 @@ class UserController(
     //    ========================================================================================================================
     //    ========================================================================================================================
     //    ========================================================================================================================
+    @CrossOrigin
+    @RequestMapping("login", method = [RequestMethod.POST])
+    fun login(
+            @RequestParam id: String,
+            @RequestParam password: String,
+            res: HttpServletResponse
+    ): Map<String, Any> {
+
+        val returnMap: MutableMap<String, Any> = HashMap()
+
+        try {
+            returnMap["result"] = 1
+            returnMap["data"] = userService.login(id, password)
+        } catch (e: ApiException) {
+            res.status = e.status
+            returnMap["result"] = 0
+            returnMap["resultCode"] = e.code
+            returnMap["resultMsg"] = e.msg
+        } catch (e: Exception) {
+            res.status = 500
+            returnMap["result"] = 0
+            returnMap["resultCode"] = ApiErrorCode.UNKNOWN.code
+            returnMap["resultMsg"] = ApiErrorCode.UNKNOWN.msg
+        }
+
+        return returnMap
+
+    }
 
     @CrossOrigin
     @RequestMapping("me", method = [RequestMethod.GET])
@@ -60,6 +88,35 @@ class UserController(
         try {
             returnMap["result"] = 1
             returnMap["data"] = userService.readUser(id)
+        } catch (e: ApiException) {
+            res.status = e.status
+            returnMap["result"] = 0
+            returnMap["resultCode"] = e.code
+            returnMap["resultMsg"] = e.msg
+        } catch (e: Exception) {
+            res.status = 500
+            returnMap["result"] = 0
+            returnMap["resultCode"] = ApiErrorCode.UNKNOWN.code
+            returnMap["resultMsg"] = ApiErrorCode.UNKNOWN.msg
+        }
+
+        return returnMap
+
+    }
+
+    @CrossOrigin
+    @RequestMapping("snacks", method = [RequestMethod.GET])
+    fun readUserSnackList(
+            @RequestParam id: Long,
+            @RequestParam yearMonth: String,
+            res: HttpServletResponse
+    ): Map<String, Any> {
+
+        val returnMap: MutableMap<String, Any> = HashMap()
+
+        try {
+            returnMap["result"] = 1
+            returnMap["data"] = userService.readUserSnackList(id ,yearMonth)
         } catch (e: ApiException) {
             res.status = e.status
             returnMap["result"] = 0

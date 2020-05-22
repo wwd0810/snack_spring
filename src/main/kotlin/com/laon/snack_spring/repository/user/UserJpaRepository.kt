@@ -8,4 +8,6 @@ import java.util.*
 
 interface UserJpaRepository: JpaRepository<User, Long>, PagingAndSortingRepository<User, Long> {
 
+    fun findByNickname(nickname: String ): Optional<User>
+
 }

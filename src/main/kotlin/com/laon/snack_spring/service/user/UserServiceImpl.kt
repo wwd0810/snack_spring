@@ -4,17 +4,27 @@ import com.laon.snack_spring.common.define.ApiErrorCode
 import com.laon.snack_spring.common.exception.ApiException
 import com.laon.snack_spring.common.lib.logger
 import com.laon.snack_spring.entity.common.Paging
+import com.laon.snack_spring.entity.history.History
 import com.laon.snack_spring.entity.market.Snack
 import com.laon.snack_spring.entity.user.User
 import com.laon.snack_spring.repository.history.HistoryJpaRepository
 import com.laon.snack_spring.repository.snack.SnackJpaRepository
 import com.laon.snack_spring.repository.team.TeamJpaRepositoty
 import com.laon.snack_spring.repository.user.UserJpaRepository
+import org.hibernate.criterion.Order
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.PageRequest
+import org.springframework.data.domain.Sort
+import org.springframework.format.annotation.DateTimeFormat
+import org.springframework.format.annotation.DateTimeFormat.ISO
 import org.springframework.stereotype.Service
 import java.lang.Exception
+import java.time.LocalDateTime
+import java.time.YearMonth
+import java.time.format.DateTimeFormatter
 import java.util.*
+import java.time.temporal.TemporalAdjusters.lastDayOfMonth
+
 import kotlin.collections.HashMap
 
 @Service("UserService")
@@ -28,6 +38,68 @@ class UserServiceImpl(
 
     companion object {
         private val log = logger()
+    }
+
+    @Throws(Exception::class)
+    override fun readUserSnackList(id: Long, yearMonth: String): Map<String, Any> {
+        val returnMap: MutableMap<String, Any> = HashMap()
+//        val date = LocalDateTime.parse(yearMonth, DateTimeFormatter.ISO_DATE_TIME)
+
+        val tmp = yearMonth.split("-")
+
+        if (tmp.size == 2) {
+            try {
+                val start = LocalDateTime.of(tmp[0].toInt(), tmp[1].toInt(),1,0,0)
+                val end = start.with(lastDayOfMonth())
+
+                val histories = historyJpaRepository.findAllByUser_idAndCreatedDateBetween(id, start, end)
+
+                var payment: Long? = 0
+
+                if (payment != null) {
+                    histories.forEach {
+                        payment += it.snack?.price!! * it.quantity
+                    }
+                }
+
+                run {
+                    returnMap["monthPayment"] = payment!!
+                    returnMap["histories"] = histories.reversed()
+                }
+            } catch (e: Exception) {
+                throw ApiException(ApiErrorCode.INVALID_PARAMETER)
+            }
+
+        } else {
+            throw ApiException(ApiErrorCode.INVALID_PARAMETER)
+        }
+//        val now = LocalDateTime.now()`
+//        val start = now.withDayOfMonth(1)
+//        val end = now.with(lastDayOfMonth())`
+
+
+         return returnMap
+    }
+
+    @Throws(Exception::class)
+    override fun login(id: String, password: String): Map<String, Any> {
+        val returnMap: MutableMap<String, Any> = HashMap()
+
+
+
+        val user = userJpaRepository.findByNickname(id).orElseThrow { throw ApiException(ApiErrorCode.USER_NOT_FOUND) }
+
+        if (user.password != password) {
+            throw ApiException(ApiErrorCode.USER_PASS_INVALID)
+        } else {
+            run {
+                returnMap["user"] = user
+            }
+        }
+
+
+
+        return returnMap
     }
 
 
@@ -57,24 +129,34 @@ class UserServiceImpl(
 
         val user = userJpaRepository.findById(id).orElseThrow { throw ApiException(ApiErrorCode.USER_NOT_FOUND) }
 
-        val histories = historyJpaRepository.findAllByUser_idAndPayment(id, false)
+        var sort: Sort = Sort.by("createdDate")
 
-        var payment: Long = 0
+        sort = sort.descending()
 
-        histories.forEach {
-            val snackId: Long? = it.snack_id
+        val pageRequest = PageRequest.of(0, 3, sort)
 
-            if (snackId != null) {
-                val snack = snackJpaRepository.findById(snackId).orElseThrow { throw ApiException(ApiErrorCode.SNACK_NOT_FOUND) }
+        val data: Page<History>
 
-                payment += snack.price
+        data = historyJpaRepository.findAllByUser_id(id, pageRequest)
+
+        val now = LocalDateTime.now()
+        val start = now.withDayOfMonth(1)
+        val end = now.with(lastDayOfMonth())
+
+        val histories = historyJpaRepository.findAllByUser_idAndPaymentAndCreatedDateBetween(id, false, start, end )
+
+        var payment: Long? = 0
+
+        if (payment != null) {
+            histories.forEach {
+                payment += it.snack?.price!! * it.quantity
             }
-
         }
 
         run {
             returnMap["user"] = user
-            returnMap["returnPayment"] = payment
+            returnMap["nowMothPayment"] = payment!!
+            returnMap["recentHistory"] = data.content
         }
 
         return returnMap
@@ -106,7 +188,7 @@ class UserServiceImpl(
 
 
 
-        val user = User(id = null, username = username, nickname = nickname)
+        val user = User(id = null, username = username, nickname = nickname, password = "laonpp00")
         user.team_id = group.id
 
         userJpaRepository.save(user)

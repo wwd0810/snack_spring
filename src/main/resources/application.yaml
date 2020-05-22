@@ -5,8 +5,8 @@ server:
 
 spring:
   datasource:
-#    url: jdbc:log4jdbc:mariadb://192.168.100.228:3306/laon_snack?useSSL=false&useUnicode=true&chartacterEncoding=utf8&serverTimezone=Asia/Seoul
-    url: jdbc:log4jdbc:mariadb://192.168.100.247:3306/laon_snack?useSSL=false&useUnicode=true&chartacterEncoding=utf8&serverTimezone=Asia/Seoul
+    url: jdbc:log4jdbc:mariadb://192.168.100.228:3306/laon_snack?useSSL=false&useUnicode=true&chartacterEncoding=utf8&serverTimezone=Asia/Seoul
+#    url: jdbc:log4jdbc:mariadb://192.168.100.247:3306/laon_snack?useSSL=false&useUnicode=true&chartacterEncoding=utf8&serverTimezone=Asia/Seoul
     username: laon_snack
 #    username: root
     password: laonpp00
@@ -35,5 +35,5 @@ spring:
       ddl-auto: update
 
 upload:
-#  path: /Users/joo/Desktop/project/snack_spring/upload
-  path: /home/kiosk/projects/laon_snack_spring/upload
+  path: /Users/joo/Desktop/project/snack_spring/upload
+#  path: /home/kiosk/projects/laon_snack_spring/upload
