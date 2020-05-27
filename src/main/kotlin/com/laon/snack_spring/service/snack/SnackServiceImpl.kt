@@ -9,6 +9,7 @@ import com.laon.snack_spring.repository.history.HistoryJpaRepository
 import com.laon.snack_spring.repository.snack.SnackJpaRepository
 import com.laon.snack_spring.repository.user.UserJpaRepository
 import org.springframework.beans.factory.annotation.Value
+import org.springframework.data.domain.Sort
 import org.springframework.stereotype.Service
 import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.multipart.MultipartFile
@@ -42,15 +43,21 @@ class SnackServiceImpl(
 
         val payload: MutableMap<String, Any?> = HashMap()
 
+        var sort: Sort = Sort.by("remain")
+
+        sort = sort.descending()
+
         run {
             payload["query"] = query
         }
 
         val snacks: Array<Snack> = if (query != "") {
-            snackJpaRepository.findAllByType(query)
+            snackJpaRepository.findAllByType(query, sort)
         } else {
-            snackJpaRepository.findAll().toTypedArray()
+            snackJpaRepository.findAll(sort).toTypedArray()
         }
+
+
 
         run {
             returnMap["snack"] = snacks
